@@ -290,13 +290,6 @@ checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
 
 [[package]]
 name = "bevy"
-version = "0.1.0"
-dependencies = [
- "bevy 0.13.1",
-]
-
-[[package]]
-name = "bevy"
 version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ea370412c322af887c9115442d8f2ec991b652f163a1d8920ecaf08cae63f2bc"
@@ -2888,6 +2881,13 @@ dependencies = [
  "bitflags 2.5.0",
  "serde",
  "serde_derive",
+]
+
+[[package]]
+name = "rust_playground"
+version = "0.1.0"
+dependencies = [
+ "bevy",
 ]
 
 [[package]]

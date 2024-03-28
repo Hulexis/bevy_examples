@@ -15,12 +15,31 @@ opt-level = 3
 bevy = { version = "0.13.1", features = ["dynamic_linking"] }
 
 [[example]]
-name = "bloom_2d"
-path = "src/2d/bloom_2d.rs"
+name = "bevy_bloom_2d"
+path = "bevy/2d/bloom_2d.rs"
 doc-scrape-examples = true
-
-[package.metadata.example.bloom_2d]
+[package.metadata.example.bevy_bloom_2d]
 name = "2D Bloom"
 description = "Illustrates bloom post-processing in 2d"
 category = "2D Rendering"
+wasm = true
+
+[[example]]
+name = "bevy_3d_shapes"
+path = "bevy/3d/3d_shapes.rs"
+doc-scrape-examples = true
+[package.metadata.example.bevy_3d_shapes]
+name = "3D Shapes"
+description = "A scene showcasing the built-in 3D shapes"
+category = "3D Rendering"
+wasm = true
+
+[[example]]
+name = "bevy_skybox"
+path = "bevy/3d/skybox.rs"
+doc-scrape-examples = true
+[package.metadata.example.bevy_skybox]
+name = "3D Skybox"
+description = "Skybox"
+category = "3D Rendering"
 wasm = true

@@ -7,7 +7,8 @@ use bevy::{
 	sprite::MaterialMesh2dBundle,
 };
 
-fn main() {
+fn main()
+{
 	App::new()
 		.add_plugins(DefaultPlugins)
 		.add_systems(Startup, setup)
@@ -20,7 +21,8 @@ fn setup(
 	mut meshes: ResMut<Assets<Mesh>>,
 	mut materials: ResMut<Assets<ColorMaterial>>,
 	asset_server: Res<AssetServer>,
-) {
+)
+{
 	commands.spawn((
 		Camera2dBundle {
 			camera: Camera {
@@ -34,7 +36,7 @@ fn setup(
 	));
 
 	commands.spawn(SpriteBundle {
-		texture: asset_server.load("bevy_bird_dark.png"),
+		texture: asset_server.load("img/bevy_bird_dark.png"),
 		sprite: Sprite {
 			color: Color::rgb(5.0, 5.0, 5.0),
 			custom_size: Some(Vec2::splat(160.0)),
@@ -81,7 +83,8 @@ fn update_bloom_settings(
 	mut commands: Commands,
 	keycode: Res<ButtonInput<KeyCode>>,
 	time: Res<Time>,
-) {
+)
+{
 	let bloom_settings = camera.single_mut();
 	let mut text = text.single_mut();
 	let text = &mut text.sections[0].value;
