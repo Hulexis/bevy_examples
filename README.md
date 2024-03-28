@@ -1,4 +1,4 @@
-<![Rust banner]("./assets/img/rust-banner.png")
+<![Rust banner]("assets/img/rust-banner.png")
 
 # Rust playground
 
